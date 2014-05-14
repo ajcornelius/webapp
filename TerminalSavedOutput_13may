@@ -1,0 +1,199 @@
+[Web Dev]:  /vagrant/src/queerstir $ git remote rm origin
+[Web Dev]:  /vagrant/src/queerstir $ git remote add origin https://github.com/ajcornelius/webapp.git
+[Web Dev]:  /vagrant/src/queerstir $ git push -u origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/ajcornelius/webapp.git'
+[Web Dev]:  /vagrant/src/queerstir $ git log
+fatal: bad default revision 'HEAD'
+[Web Dev]:  /vagrant/src/queerstir $ ls git branch
+ls: cannot access git: No such file or directory
+ls: cannot access branch: No such file or directory
+[Web Dev]:  /vagrant/src/queerstir $ git branch
+[Web Dev]:  /vagrant/src/queerstir $ * origin
+No command 'app' found, did you mean:
+ Command 'arp' from package 'net-tools' (main)
+ Command 'asp' from package 'asp' (universe)
+ Command 'atp' from package 'atp' (universe)
+ Command 'apm' from package 'apmd' (main)
+ Command 'apf' from package 'apf-firewall' (universe)
+ Command 'apg' from package 'apg' (main)
+ Command 'pp' from package 'libpar-packer-perl' (universe)
+ Command 'xpp' from package 'xpp' (universe)
+ Command 'gpp' from package 'gpp' (universe)
+ Command 'yapp' from package 'libparse-yapp-perl' (universe)
+ Command 'pap' from package 'netatalk' (universe)
+ Command 'a2p' from package 'perl' (main)
+ Command 'wpp' from package 'wpp' (universe)
+ Command 'tpp' from package 'tpp' (universe)
+ Command 'cpp' from package 'cpp' (main)
+app: command not found
+[Web Dev]:  /vagrant/src/queerstir $ *origin
+[Web Dev]:  /vagrant/src/queerstir $ git commit -am "Adjust production.rb line27 so it compiles assets"
+[master (root-commit) e4a863c] Adjust production.rb line27 so it compiles assets
+ 36 files changed, 858 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README.rdoc
+ create mode 100644 Rakefile
+ create mode 100644 app/assets/images/.keep
+ create mode 100644 app/assets/javascripts/application.js
+ create mode 100644 app/assets/stylesheets/application.css
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/controllers/concerns/.keep
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/mailers/.keep
+ create mode 100644 app/models/.keep
+ create mode 100644 app/models/concerns/.keep
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100755 bin/bundle
+ create mode 100755 bin/rails
+ create mode 100755 bin/rake
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/filter_parameter_logging.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/secret_token.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/initializers/wrap_parameters.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 lib/assets/.keep
+ create mode 100644 lib/tasks/.keep
+ create mode 100644 log/.keep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/robots.txt
+ create mode 100644 test/controllers/.keep
+ create mode 100644 test/fixtures/.keep
+ create mode 100644 test/helpers/.keep
+ create mode 100644 test/integration/.keep
+ create mode 100644 test/mailers/.keep
+ create mode 100644 test/models/.keep
+ create mode 100644 test/test_helper.rb
+ create mode 100644 vendor/assets/javascripts/.keep
+ create mode 100644 vendor/assets/stylesheets/.keep
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+ * [new branch]      master -> master
+[Web Dev]:  /vagrant/src/queerstir $ heroku create queerstir      
+Creating queerstir... done, stack is cedar
+http://queerstir.herokuapp.com/ | git@heroku.com:queerstir.git
+Git remote heroku added
+[Web Dev]:  /vagrant/src/queerstir $ git push heroku master
+The authenticity of host 'heroku.com (50.19.85.132)' can't be established.
+RSA key fingerprint is 8b:48:5e:67:0e:c9:16:47:32:f2:87:0c:1f:c8:60:ad.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'heroku.com,50.19.85.132' (RSA) to the list of known hosts.
+Initializing repository, done.
+Counting objects: 60, done.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (60/60), 14.77 KiB, done.
+Total 60 (delta 2), reused 0 (delta 0)
+
+-----> Ruby app detected
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.0.0
+-----> Installing dependencies using 1.5.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       Fetching gem metadata from https://rubygems.org/..........
+       Fetching additional metadata from https://rubygems.org/..
+       Installing minitest (4.7.5)
+       Installing rake (10.3.1)
+       Installing multi_json (1.10.0)
+       Installing i18n (0.6.9)
+       Installing thread_safe (0.3.3)
+       Installing builder (3.1.4)
+       Installing erubis (2.7.0)
+       Installing tzinfo (0.3.39)
+       Installing mime-types (1.25.1)
+       Installing rack (1.5.2)
+       Installing polyglot (0.3.4)
+       Installing activerecord-deprecated_finders (1.0.3)
+       Installing arel (4.0.2)
+       Installing execjs (2.0.2)
+       Installing coffee-script-source (1.7.0)
+       Installing thor (0.19.1)
+       Using bundler (1.5.2)
+       Installing hike (1.2.3)
+       Installing tilt (1.4.1)
+       Installing sass (3.2.19)
+       Installing activesupport (4.0.1)
+       Installing rack-test (0.6.2)
+       Installing coffee-script (2.2.0)
+       Installing treetop (1.4.15)
+       Installing json (1.8.1)
+       Installing activemodel (4.0.1)
+       Installing sprockets (2.11.0)
+       Installing jbuilder (1.5.3)
+       Installing mail (2.5.4)
+       Installing actionpack (4.0.1)
+       Installing uglifier (2.5.0)
+       Installing rdoc (4.1.1)
+       Installing activerecord (4.0.1)
+       Installing actionmailer (4.0.1)
+       Installing sprockets-rails (2.0.1)
+       Installing railties (4.0.1)
+       Installing sdoc (0.4.0)
+       Installing coffee-rails (4.0.1)
+       Installing jquery-rails (3.1.0)
+       Installing turbolinks (2.2.2)
+       Installing sass-rails (4.0.3)
+       Installing rails (4.0.1)
+       Installing pg (0.17.1)
+       Your bundle is complete!
+       Gems in the groups development and test were not installed.
+       It was installed into ./vendor/bundle
+       Post-install message from rdoc:
+       Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+       <= 1.8.6 : unsupported
+       = 1.8.7 : gem install rdoc-data; rdoc-data --install
+       = 1.9.1 : gem install rdoc-data; rdoc-data --install
+       >= 1.9.2 : nothing to do! Yay!
+       Bundle completed (22.09s)
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       I, [2014-05-13T19:15:14.686189 #1025]  INFO -- : Writing /tmp/build_5140864c-19e4-447c-ae4d-d701270e61f1/public/assets/application-c8d048bf2b32f85ef4807549fa44b21b.js
+       I, [2014-05-13T19:15:14.707365 #1025]  INFO -- : Writing /tmp/build_5140864c-19e4-447c-ae4d-d701270e61f1/public/assets/application-d0b54dd563966c42aad5fd85b1c1f713.css
+       Asset precompilation completed (6.57s)
+       Cleaning assets
+       Running: rake assets:clean
+-----> WARNINGS:
+       Include 'rails_12factor' gem to enable all platform features
+       See https://devcenter.heroku.com/articles/rails-integration-gems for more information.
+       
+       You have not declared a Ruby version in your Gemfile.
+       To set your Ruby version add this line to your Gemfile:
+       ruby '2.0.0'
+       # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+       
+       No Procfile detected, using the default web server (webrick)
+       https://devcenter.heroku.com/articles/ruby-default-web-server
+-----> Discovering process types
+       Procfile declares types -> (none)
+       Default types for Ruby  -> console, rake, web, worker
+
+-----> Compressing... done, 21.4MB
+-----> Launching... done, v6
+       http://queerstir.herokuapp.com/ deployed to Heroku
+
+To git@heroku.com:queerstir.git
+ * [new branch]      master -> master
+[Web Dev]:  /vagrant/src/queerstir $ vagrant 
