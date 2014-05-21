@@ -1,0 +1,411 @@
+[Web Dev]:  /vagrant/src/queerstir $ git remote rm origin
+[Web Dev]:  /vagrant/src/queerstir $ git remote add origin https://github.com/ajcornelius/webapp.git
+[Web Dev]:  /vagrant/src/queerstir $ git push -u origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/ajcornelius/webapp.git'
+[Web Dev]:  /vagrant/src/queerstir $ git log
+fatal: bad default revision 'HEAD'
+[Web Dev]:  /vagrant/src/queerstir $ ls git branch
+ls: cannot access git: No such file or directory
+ls: cannot access branch: No such file or directory
+[Web Dev]:  /vagrant/src/queerstir $ git branch
+[Web Dev]:  /vagrant/src/queerstir $ * origin
+No command 'app' found, did you mean:
+ Command 'arp' from package 'net-tools' (main)
+ Command 'asp' from package 'asp' (universe)
+ Command 'atp' from package 'atp' (universe)
+ Command 'apm' from package 'apmd' (main)
+ Command 'apf' from package 'apf-firewall' (universe)
+ Command 'apg' from package 'apg' (main)
+ Command 'pp' from package 'libpar-packer-perl' (universe)
+ Command 'xpp' from package 'xpp' (universe)
+ Command 'gpp' from package 'gpp' (universe)
+ Command 'yapp' from package 'libparse-yapp-perl' (universe)
+ Command 'pap' from package 'netatalk' (universe)
+ Command 'a2p' from package 'perl' (main)
+ Command 'wpp' from package 'wpp' (universe)
+ Command 'tpp' from package 'tpp' (universe)
+ Command 'cpp' from package 'cpp' (main)
+app: command not found
+[Web Dev]:  /vagrant/src/queerstir $ *origin
+[Web Dev]:  /vagrant/src/queerstir $ git commit -am "Adjust production.rb line27 so it compiles assets"
+[master (root-commit) e4a863c] Adjust production.rb line27 so it compiles assets
+ 36 files changed, 858 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README.rdoc
+ create mode 100644 Rakefile
+ create mode 100644 app/assets/images/.keep
+ create mode 100644 app/assets/javascripts/application.js
+ create mode 100644 app/assets/stylesheets/application.css
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/controllers/concerns/.keep
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/mailers/.keep
+ create mode 100644 app/models/.keep
+ create mode 100644 app/models/concerns/.keep
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100755 bin/bundle
+ create mode 100755 bin/rails
+ create mode 100755 bin/rake
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/filter_parameter_logging.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/secret_token.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/initializers/wrap_parameters.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 lib/assets/.keep
+ create mode 100644 lib/tasks/.keep
+ create mode 100644 log/.keep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/robots.txt
+ create mode 100644 test/controllers/.keep
+ create mode 100644 test/fixtures/.keep
+ create mode 100644 test/helpers/.keep
+ create mode 100644 test/integration/.keep
+ create mode 100644 test/mailers/.keep
+ create mode 100644 test/models/.keep
+ create mode 100644 test/test_helper.rb
+ create mode 100644 vendor/assets/javascripts/.keep
+ create mode 100644 vendor/assets/stylesheets/.keep
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+ * [new branch]      master -> master
+[Web Dev]:  /vagrant/src/queerstir $ heroku create queerstir      
+Creating queerstir... done, stack is cedar
+http://queerstir.herokuapp.com/ | git@heroku.com:queerstir.git
+Git remote heroku added
+[Web Dev]:  /vagrant/src/queerstir $ git push heroku master
+The authenticity of host 'heroku.com (50.19.85.132)' can't be established.
+RSA key fingerprint is 8b:48:5e:67:0e:c9:16:47:32:f2:87:0c:1f:c8:60:ad.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'heroku.com,50.19.85.132' (RSA) to the list of known hosts.
+Initializing repository, done.
+Counting objects: 60, done.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (60/60), 14.77 KiB, done.
+Total 60 (delta 2), reused 0 (delta 0)
+
+-----> Ruby app detected
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.0.0
+-----> Installing dependencies using 1.5.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       Fetching gem metadata from https://rubygems.org/..........
+       Fetching additional metadata from https://rubygems.org/..
+       Installing minitest (4.7.5)
+       Installing rake (10.3.1)
+       Installing multi_json (1.10.0)
+       Installing i18n (0.6.9)
+       Installing thread_safe (0.3.3)
+       Installing builder (3.1.4)
+       Installing erubis (2.7.0)
+       Installing tzinfo (0.3.39)
+       Installing mime-types (1.25.1)
+       Installing rack (1.5.2)
+       Installing polyglot (0.3.4)
+       Installing activerecord-deprecated_finders (1.0.3)
+       Installing arel (4.0.2)
+       Installing execjs (2.0.2)
+       Installing coffee-script-source (1.7.0)
+       Installing thor (0.19.1)
+       Using bundler (1.5.2)
+       Installing hike (1.2.3)
+       Installing tilt (1.4.1)
+       Installing sass (3.2.19)
+       Installing activesupport (4.0.1)
+       Installing rack-test (0.6.2)
+       Installing coffee-script (2.2.0)
+       Installing treetop (1.4.15)
+       Installing json (1.8.1)
+       Installing activemodel (4.0.1)
+       Installing sprockets (2.11.0)
+       Installing jbuilder (1.5.3)
+       Installing mail (2.5.4)
+       Installing actionpack (4.0.1)
+       Installing uglifier (2.5.0)
+       Installing rdoc (4.1.1)
+       Installing activerecord (4.0.1)
+       Installing actionmailer (4.0.1)
+       Installing sprockets-rails (2.0.1)
+       Installing railties (4.0.1)
+       Installing sdoc (0.4.0)
+       Installing coffee-rails (4.0.1)
+       Installing jquery-rails (3.1.0)
+       Installing turbolinks (2.2.2)
+       Installing sass-rails (4.0.3)
+       Installing rails (4.0.1)
+       Installing pg (0.17.1)
+       Your bundle is complete!
+       Gems in the groups development and test were not installed.
+       It was installed into ./vendor/bundle
+       Post-install message from rdoc:
+       Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+       <= 1.8.6 : unsupported
+       = 1.8.7 : gem install rdoc-data; rdoc-data --install
+       = 1.9.1 : gem install rdoc-data; rdoc-data --install
+       >= 1.9.2 : nothing to do! Yay!
+       Bundle completed (22.09s)
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       I, [2014-05-13T19:15:14.686189 #1025]  INFO -- : Writing /tmp/build_5140864c-19e4-447c-ae4d-d701270e61f1/public/assets/application-c8d048bf2b32f85ef4807549fa44b21b.js
+       I, [2014-05-13T19:15:14.707365 #1025]  INFO -- : Writing /tmp/build_5140864c-19e4-447c-ae4d-d701270e61f1/public/assets/application-d0b54dd563966c42aad5fd85b1c1f713.css
+       Asset precompilation completed (6.57s)
+       Cleaning assets
+       Running: rake assets:clean
+-----> WARNINGS:
+       Include 'rails_12factor' gem to enable all platform features
+       See https://devcenter.heroku.com/articles/rails-integration-gems for more information.
+       
+       You have not declared a Ruby version in your Gemfile.
+       To set your Ruby version add this line to your Gemfile:
+       ruby '2.0.0'
+       # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+       
+       No Procfile detected, using the default web server (webrick)
+       https://devcenter.heroku.com/articles/ruby-default-web-server
+-----> Discovering process types
+       Procfile declares types -> (none)
+       Default types for Ruby  -> console, rake, web, worker
+
+-----> Compressing... done, 21.4MB
+-----> Launching... done, v6
+       http://queerstir.herokuapp.com/ deployed to Heroku
+
+To git@heroku.com:queerstir.git
+ * [new branch]      master -> master
+[Web Dev]:  /vagrant/src/queerstir $ vagrant halt
+The program 'vagrant' is currently not installed.  You can install it by typing:
+sudo apt-get install vagrant
+[Web Dev]:  /vagrant/src/queerstir $ ls
+app  bin  config  config.ru  db  Gemfile  Gemfile.lock	lib  log  public  Rakefile  README.rdoc  TerminalSavedOutput_13may  test  tmp  vendor
+[Web Dev]:  /vagrant/src/queerstir $ ls
+app  config	db	 Gemfile.lock  log     Rakefile     TerminalSavedOutput_13may  tmp
+bin  config.ru	Gemfile  lib	       public  README.rdoc  test		       vendor
+[Web Dev]:  /vagrant/src/queerstir $ rails generate controller places
+      create  app/controllers/places_controller.rb
+      invoke  erb
+      create    app/views/places
+      invoke  test_unit
+      create    test/controllers/places_controller_test.rb
+      invoke  helper
+      create    app/helpers/places_helper.rb
+      invoke    test_unit
+      create      test/helpers/places_helper_test.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/places.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/places.css.scss
+[Web Dev]:  /vagrant/src/queerstir $ $ git add --all
+$: command not found
+[Web Dev]:  /vagrant/src/queerstir $ git add --all
+since your last commit in here"tir $ git commit -am "Add a good message of what you actually changed  
+[master 8ec862c] Add a good message of what you actually changed since your last commit in here
+ 9 files changed, 224 insertions(+)
+ create mode 100644 TerminalSavedOutput_13may
+ create mode 100644 app/assets/javascripts/places.js.coffee
+ create mode 100644 app/assets/stylesheets/places.css.scss
+ create mode 100644 app/controllers/places_controller.rb
+ create mode 100644 app/helpers/places_helper.rb
+ create mode 100644 app/views/places/index.html.erb
+ create mode 100644 test/controllers/places_controller_test.rb
+ create mode 100644 test/helpers/places_helper_test.rb
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': git status
+Password for 'https://git status@github.com': 
+fatal: Authentication failed
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius      
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+   e4a863c..8ec862c  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ git status
+# On branch master
+nothing to commit (working directory clean)
+[Web Dev]:  /vagrant/src/queerstir $ rails generate model place
+      invoke  active_record
+      create    db/migrate/20140514211324_create_places.rb
+      create    app/models/place.rb
+      invoke    test_unit
+      create      test/models/place_test.rb
+      create      test/fixtures/places.yml
+[Web Dev]:  /vagrant/src/queerstir $ rake db:migrate
+==  CreatePlaces: migrating ===================================================
+-- create_table(:places)
+   -> 0.0115s
+==  CreatePlaces: migrated (0.0124s) ==========================================
+
+[Web Dev]:  /vagrant/src/queerstir $ git add --all
+[Web Dev]:  /vagrant/src/queerstir $ git commit -am "created db"
+[master a082bae] created db
+ 5 files changed, 59 insertions(+)
+ create mode 100644 app/models/place.rb
+ create mode 100644 db/migrate/20140514211324_create_places.rb
+ create mode 100644 db/schema.rb
+ create mode 100644 test/fixtures/places.yml
+ create mode 100644 test/models/place_test.rb
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+   8ec862c..a082bae  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ git status
+# On branch master
+nothing to commit (working directory clean)
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+Everything up-to-date
+[Web Dev]:  /vagrant/src/queerstir $ rails console
+Loading development environment (Rails 4.0.1)
+irb(main):001:0> Place.create(:name => 'Rams Head Inn', :address => '35006 Warrington Rd, Rehoboth Beach, DE 19971', :description => 'Clothing optional men only resort, 12 man sauna, 10 man jacuzzi, full gym, sun decks')
+   (0.4ms)  BEGIN
+  SQL (109.3ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "35006 Warrington Rd, Rehoboth Beach, DE 19971"], ["created_at", Wed, 14 May 2014 21:28:37 UTC +00:00], ["description", "Clothing optional men only resort, 12 man sauna, 10 man jacuzzi, full gym, sun decks"], ["name", "Rams Head Inn"], ["updated_at", Wed, 14 May 2014 21:28:37 UTC +00:00]]
+   (2.5ms)  COMMIT
+=> #<Place id: 1, name: "Rams Head Inn", description: "Clothing optional men only resort, 12 man sauna, 10...", address: "35006 Warrington Rd, Rehoboth Beach, DE 19971", created_at: "2014-05-14 21:28:37", updated_at: "2014-05-14 21:28:37">
+irb(main):002:0> Place.create(:name => 'Rehoboth Guest House', :address => '40 Maryland Ave, Rehoboth Beach, DE 19971', :description => 'Cozy gay and lesbian guesthouse close to the Boardwalk, two sundecks, outdoor showers, wine and cheese parties on Saturdays')
+   (2.2ms)  BEGIN
+  SQL (1.6ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "40 Maryland Ave, Rehoboth Beach, DE 19971"], ["created_at", Wed, 14 May 2014 21:35:59 UTC +00:00], ["description", "Cozy gay and lesbian guesthouse close to the Boardwalk, two sundecks, outdoor showers, wine and cheese parties on Saturdays"], ["name", "Rehoboth Guest House"], ["updated_at", Wed, 14 May 2014 21:35:59 UTC +00:00]]
+   (1.4ms)  COMMIT
+=> #<Place id: 2, name: "Rehoboth Guest House", description: "Cozy gay and lesbian guesthouse close to the Boardw...", address: "40 Maryland Ave, Rehoboth Beach, DE 19971", created_at: "2014-05-14 21:35:59", updated_at: "2014-05-14 21:35:59">
+irb(main):003:0> exit
+[Web Dev]:  /vagrant/src/queerstir $ git add --all
+[Web Dev]:  /vagrant/src/queerstir $ git commit -am "added content to db"
+[master 9a41a05] added content to db
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+   a082bae..9a41a05  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ git status
+# On branch master
+nothing to commit (working directory clean)
+[Web Dev]:  /vagrant/src/queerstir $ git push heroku master
+Fetching repository, done.
+Counting objects: 59, done.
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (45/45), 7.53 KiB, done.
+Total 45 (delta 10), reused 0 (delta 0)
+
+-----> Ruby app detected
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.0.0
+-----> Installing dependencies using 1.5.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       Using multi_json (1.10.0)
+       Using rake (10.3.1)
+       Using i18n (0.6.9)
+       Using minitest (4.7.5)
+       Using thread_safe (0.3.3)
+       Using tzinfo (0.3.39)
+       Using builder (3.1.4)
+       Using rack (1.5.2)
+       Using erubis (2.7.0)
+       Using mime-types (1.25.1)
+       Using polyglot (0.3.4)
+       Using activerecord-deprecated_finders (1.0.3)
+       Using arel (4.0.2)
+       Using coffee-script-source (1.7.0)
+       Using execjs (2.0.2)
+       Using thor (0.19.1)
+       Using hike (1.2.3)
+       Using json (1.8.1)
+       Using bundler (1.5.2)
+       Using pg (0.17.1)
+       Using sass (3.2.19)
+       Using activesupport (4.0.1)
+       Using tilt (1.4.1)
+       Using treetop (1.4.15)
+       Using rack-test (0.6.2)
+       Using rdoc (4.1.1)
+       Using uglifier (2.5.0)
+       Using coffee-script (2.2.0)
+       Using activemodel (4.0.1)
+       Using jbuilder (1.5.3)
+       Using mail (2.5.4)
+       Using sprockets (2.11.0)
+       Using actionpack (4.0.1)
+       Using sdoc (0.4.0)
+       Using actionmailer (4.0.1)
+       Using railties (4.0.1)
+       Using sprockets-rails (2.0.1)
+       Using activerecord (4.0.1)
+       Using coffee-rails (4.0.1)
+       Using jquery-rails (3.1.0)
+       Using rails (4.0.1)
+       Using sass-rails (4.0.3)
+       Using turbolinks (2.2.2)
+       Your bundle is complete!
+       Gems in the groups development and test were not installed.
+       It was installed into ./vendor/bundle
+       Bundle completed (0.68s)
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       I, [2014-05-14T23:29:55.283736 #640]  INFO -- : Writing /tmp/build_6b0d2819-f0db-4b23-a036-03246922f2cd/public/assets/application-54565ebdb4874c88807e837e3b243137.js
+       Asset precompilation completed (6.63s)
+       Cleaning assets
+       Running: rake assets:clean
+-----> WARNINGS:
+       Include 'rails_12factor' gem to enable all platform features
+       See https://devcenter.heroku.com/articles/rails-integration-gems for more information.
+       
+       You have not declared a Ruby version in your Gemfile.
+       To set your Ruby version add this line to your Gemfile:
+       ruby '2.0.0'
+       # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+       
+       No Procfile detected, using the default web server (webrick)
+       https://devcenter.heroku.com/articles/ruby-default-web-server
+-----> Discovering process types
+       Procfile declares types -> (none)
+       Default types for Ruby  -> console, rake, web, worker
+
+-----> Compressing... done, 21.5MB
+-----> Launching... done, v7
+       http://queerstir.herokuapp.com/ deployed to Heroku
+
+To git@heroku.com:queerstir.git
+   e4a863c..9a41a05  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ heroku run "rake db:migrate"
+Running `rake db:migrate` attached to terminal... up, run.4356
+==  CreatePlaces: migrating ===================================================
+-- create_table(:places)
+   -> 0.0303s
+==  CreatePlaces: migrated (0.0305s) ==========================================
+
+[Web Dev]:  /vagrant/src/queerstir $ heroku restart
+Restarting dynos... done
+[Web Dev]:  /vagrant/src/queerstir $ heroku run console
+Running `console` attached to terminal... up, run.1058
+Loading production environment (Rails 4.0.1)
+irb(main):001:0> Place.create(:name => 'Rams Head Inn', :address => '35006 Warrington Rd, Rehoboth Beach, DE 19971', :description => 'Clothing optional men only resort, 12 man sauna, 10 man jacuzzi, full gym, sun decks')
+=> #<Place id: 1, name: "Rams Head Inn", description: "Clothing optional men only resort, 12 man sauna, 10...", address: "35006 Warrington Rd, Rehoboth Beach, DE 19971", created_at: "2014-05-14 23:39:13", updated_at: "2014-05-14 23:39:13">
+irb(main):002:0> Place.create(:name => 'Rehoboth Guest House', :address => '40 Maryland Ave, Rehoboth Beach, DE 19971', :description => 'Cozy gay and lesbian guesthouse close to the Boardwalk, two sundecks, outdoor showers, wine and cheese parties on Saturdays')
+=> #<Place id: 2, name: "Rehoboth Guest House", description: "Cozy gay and lesbian guesthouse close to the Boardw...", address: "40 Maryland Ave, Rehoboth Beach, DE 19971", created_at: "2014-05-14 23:40:01", updated_at: "2014-05-14 23:40:01">
+irb(main):003:0> 

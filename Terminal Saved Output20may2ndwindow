@@ -1,0 +1,239 @@
+Last login: Sun May 11 00:43:37 on ttys001
+Welcome GurlDigit!
+Angela-Corneliuss-MacBook-Pro:~ angela$ /Users/angela/Desktop/vagrant/tools/vagrant.command ; exit;
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
+
+ * Documentation:  https://help.ubuntu.com/
+Welcome to your Vagrant-built virtual machine.
+Last login: Sun May 11 04:44:08 2014 from 10.0.2.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Welcome to your Firehose Web Dev Environment
+For more info check out theFirehoseProject.com
+
+[Web Dev]:  /vagrant $ ls
+faq.md				README.md
+github-key.rb			src
+in-person.md			Sublime Text Build 3059.dmg
+Launch Mac Web Dev Environment	tools
+mac-in-person.md		Vagrantfile
+mac-online.md			VERSION
+nomster				windows-in-person.md
+online.md			windows-online.md
+[Web Dev]:  /vagrant $ cd source
+-bash: cd: source: No such file or directory
+[Web Dev]:  /vagrant $ ls
+extra_installs	Launch Mac Web Dev Environment	online.md  Vagrantfile
+faq.md		mac-in-person.md		README.md  VERSION
+github-key.rb	mac-online.md			src	   windows-in-person.md
+in-person.md	nomster				tools	   windows-online.md
+[Web Dev]:  /vagrant $ cd src
+[Web Dev]:  /vagrant/src $ ls
+firehose-test-app  queerstir
+[Web Dev]:  /vagrant/src $ rake db:create:all
+rake aborted!
+No Rakefile found (looking for: rakefile, Rakefile, rakefile.rb, Rakefile.rb)
+
+(See full trace by running task with --trace)
+[Web Dev]:  /vagrant/src $ cd src/queerstir
+-bash: cd: src/queerstir: No such file or directory
+[Web Dev]:  /vagrant/src $ ls
+firehose-test-app  queerstir
+[Web Dev]:  /vagrant/src $ cd queerstir
+[Web Dev]:  /vagrant/src/queerstir $ rake db:create:all
+[Web Dev]:  /vagrant/src/queerstir $ rails server
+=> Booting WEBrick
+=> Rails 4.0.1 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-05-13 17:56:23] INFO  WEBrick 1.3.1
+[2014-05-13 17:56:23] INFO  ruby 2.0.0 (2013-11-22) [i686-linux]
+[2014-05-13 17:56:23] INFO  WEBrick::HTTPServer#start: pid=2946 port=3000
+
+
+Started GET "/" for 10.0.2.2 at 2014-05-13 18:01:16 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (12.1ms)
+Completed 200 OK in 90ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-05-14 19:03:43 +0000
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2068ms (Views: 2066.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2014-05-14 19:03:45 +0000
+
+
+Started GET "/assets/places.js?body=1" for 10.0.2.2 at 2014-05-14 19:03:45 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-05-14 19:03:46 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-05-14 19:03:46 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-05-14 19:03:46 +0000
+
+
+Started GET "/assets/places.css?body=1" for 10.0.2.2 at 2014-05-14 19:03:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-05-14 19:03:46 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2014-05-14 21:22:12 +0000
+  ActiveRecord::SchemaMigration Load (1.0ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by PlacesController#index as HTML
+  Place Load (1.6ms)  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 177ms (Views: 144.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-05-14 21:22:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-05-14 21:22:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2014-05-14 21:22:13 +0000
+
+
+Started GET "/assets/places.css?body=1" for 10.0.2.2 at 2014-05-14 21:22:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-05-14 21:22:13 +0000
+
+
+Started GET "/assets/places.js?body=1" for 10.0.2.2 at 2014-05-14 21:22:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-05-14 21:22:13 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2014-05-14 21:36:17 +0000
+Processing by PlacesController#index as HTML
+  Place Load (2.5ms)  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 156ms (Views: 148.7ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/places.js?body=1" for 10.0.2.2 at 2014-05-14 21:36:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-05-14 21:36:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-05-14 21:36:18 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2014-05-14 21:36:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-05-14 21:36:18 +0000
+
+
+Started GET "/assets/places.css?body=1" for 10.0.2.2 at 2014-05-14 21:36:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-05-14 21:36:18 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2014-05-14 21:57:15 +0000
+Processing by PlacesController#index as HTML
+  Place Load (1.9ms)  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 144ms (Views: 141.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/places.js?body=1" for 10.0.2.2 at 2014-05-14 21:57:15 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-05-14 21:57:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-05-14 21:57:16 +0000
+
+
+Started GET "/assets/places.css?body=1" for 10.0.2.2 at 2014-05-14 21:57:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-05-14 21:57:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2014-05-14 21:57:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-05-14 21:57:16 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2014-05-14 23:31:44 +0000
+Processing by PlacesController#index as HTML
+  Place Load (1.4ms)  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 137ms (Views: 134.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-05-14 23:31:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-05-14 23:31:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-05-14 23:31:44 +0000
+
+
+Started GET "/assets/places.css?body=1" for 10.0.2.2 at 2014-05-14 23:31:44 +0000
+
+
+Started GET "/assets/places.js?body=1" for 10.0.2.2 at 2014-05-14 23:31:45 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2014-05-14 23:31:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-05-14 23:31:45 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2014-05-15 23:53:30 +0000
+Processing by PlacesController#index as HTML
+  Place Load (8.6ms)  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 239ms (Views: 228.2ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/places.css?body=1" for 10.0.2.2 at 2014-05-15 23:53:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-05-15 23:53:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-05-15 23:53:31 +0000
+
+
+Started GET "/assets/places.js?body=1" for 10.0.2.2 at 2014-05-15 23:53:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2014-05-15 23:53:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-05-15 23:53:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-05-15 23:53:31 +0000
+
