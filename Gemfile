@@ -34,6 +34,7 @@ end
 #added for bootstrap sass
 # don't need bc dup on line 9 above, gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'simple_form'
 
 #kaminari pagination
 gem 'kaminari'
