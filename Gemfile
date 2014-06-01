@@ -34,7 +34,10 @@ end
 #added for bootstrap sass
 # don't need bc dup on line 9 above, gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
 gem 'bootstrap-sass', '~> 3.1.1'
-# Use ActiveModel has_secure_password
+
+#kaminari pagination
+gem 'kaminari'
+
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server

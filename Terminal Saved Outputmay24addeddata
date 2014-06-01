@@ -1,0 +1,424 @@
+Last login: Wed May 21 15:14:39 on ttys001
+/Users/angela/Desktop/vagrant/tools/vagrant.command ; exit;
+Welcome GurlDigit!
+Angela-Corneliuss-MacBook-Pro:~ angela$ /Users/angela/Desktop/vagrant/tools/vagrant.command ; exit;
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
+
+ * Documentation:  https://help.ubuntu.com/
+Welcome to your Vagrant-built virtual machine.
+Last login: Wed May 21 19:14:44 2014 from 10.0.2.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Welcome to your Firehose Web Dev Environment
+For more info check out theFirehoseProject.com
+
+[Web Dev]:  /vagrant $ cd /vagrant/src/nomster
+-bash: cd: /vagrant/src/nomster: No such file or directory
+[Web Dev]:  /vagrant $ cd /src/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Web Dev]:  /vagrant $ cd /src/queerstir/
+-bash: cd: /src/queerstir/: No such file or directory
+[Web Dev]:  /vagrant $ cd /src/
+-bash: cd: /src/: No such file or directory
+[Web Dev]:  /vagrant $ cd /src
+-bash: cd: /src: No such file or directory
+[Web Dev]:  /vagrant $ ls
+extra_installs	Launch Mac Web Dev Environment	online.md  Vagrantfile
+faq.md		mac-in-person.md		README.md  VERSION
+github-key.rb	mac-online.md			src	   windows-in-person.md
+in-person.md	nomster				tools	   windows-online.md
+[Web Dev]:  /vagrant $ cd /src
+-bash: cd: /src: No such file or directory
+[Web Dev]:  /vagrant $ cd src
+[Web Dev]:  /vagrant/src $ cd queerstir
+[Web Dev]:  /vagrant/src/queerstir $ ls
+app	      lib			  Terminal Saved Output20may2ndwindow
+bin	      log			  Terminal Saved Output_applesson6
+config	      public			  test
+config.ru     Rakefile			  tmp
+db	      README.rdoc		  vendor
+Gemfile       TerminalSavedOutput_13may
+Gemfile.lock  Terminal Saved Output20may
+[Web Dev]:  /vagrant/src/queerstir $ bundle install
+You cannot specify the same gem twice with different version requirements.
+You specified: sass-rails (~> 4.0.0) and sass-rails (>= 3.2)
+[Web Dev]:  /vagrant/src/queerstir $ bundle install
+Fetching gem metadata from https://rubygems.org/...........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.3.1)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.10.0)
+Using thread_safe (0.3.3)
+Using tzinfo (0.3.39)
+Using activesupport (4.0.1)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.1)
+Using mime-types (1.25.1)
+Using polyglot (0.3.4)
+Using treetop (1.4.15)
+Using mail (2.5.4)
+Using actionmailer (4.0.1)
+Using activemodel (4.0.1)
+Using activerecord-deprecated_finders (1.0.3)
+Using arel (4.0.2)
+Using activerecord (4.0.1)
+Using sass (3.2.19)
+Installing bootstrap-sass (3.1.1.1)
+Using bundler (1.5.3)
+Using coffee-script-source (1.7.0)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.19.1)
+Using railties (4.0.1)
+Using coffee-rails (4.0.1)
+Using hike (1.2.3)
+Using jbuilder (1.5.3)
+Using jquery-rails (3.1.0)
+Using json (1.8.1)
+p sass"v]:  /vagrant/src/queerstir $ git commit -am "Added bootstrap
+[master 9072c2f] Added bootstrap sass
+ 7 files changed, 1070 insertions(+), 1 deletion(-)
+ create mode 100644 Terminal Saved Output20may
+ create mode 100644 Terminal Saved Output20may2ndwindow
+ create mode 100644 Terminal Saved Output_applesson6
+ create mode 100644 app/assets/stylesheets/master.css.scss
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+   9a41a05..9072c2f  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ git add --all
+r"eb Dev]:  /vagrant/src/queerstir $ git commit -am "adjusted navba 
+[master 6d9cc52] adjusted navbar
+ 1 file changed, 25 insertions(+)
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+   9072c2f..6d9cc52  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ git commit -am "added styling"
+[master 7fbbd14] added stylingstir $ git commit -am "added styling" 
+ 2 files changed, 20 insertions(+), 4 deletions(-)
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+   6d9cc52..7fbbd14  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ git add --all
+[Web Dev]:  /vagrant/src/queerstir $ git commit -am "added bgs"
+[master 83ab580] added bgs
+ 13 files changed, 25 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 app/assets/images/.DS_Store
+ create mode 100644 app/assets/images/cartographer.png
+ create mode 100644 app/assets/images/cartographer_@2X.png
+ create mode 100644 app/assets/images/light_toast.png
+ create mode 100644 app/assets/images/light_toast_@2X.png
+ create mode 100644 cartographer.zip
+ create mode 100644 cartographer/.DS_Store
+ create mode 100644 cartographer/readme.txt
+ create mode 100644 light_toast.zip
+ create mode 100644 light_toast/.DS_Store
+ create mode 100644 light_toast/readme.txt
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+   7fbbd14..83ab580  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ git add --all
+oogle fonts to custom"rc/queerstir $ git commit -am "Changed from g 
+[master f8d3b64] Changed from google fonts to custom
+ 22 files changed, 1387 insertions(+)
+ create mode 100644 app/.DS_Store
+ create mode 100644 app/assets/.DS_Store
+ create mode 100644 app/assets/fonts/.DS_Store
+ create mode 100644 app/assets/fonts/ChunkFive.zip
+ create mode 100755 app/assets/fonts/ChunkFiveotf/Chunkfive.otf
+ create mode 100755 app/assets/fonts/ChunkFiveotf/SIL Open Font License.txt
+ create mode 100644 app/assets/fonts/chuckfive/.DS_Store
+ create mode 100755 app/assets/fonts/chuckfive/chunkfive-webfont.eot
+ create mode 100755 app/assets/fonts/chuckfive/chunkfive-webfont.svg
+ create mode 100755 app/assets/fonts/chuckfive/chunkfive-webfont.ttf
+ create mode 100755 app/assets/fonts/chuckfive/chunkfive-webfont.woff
+ create mode 100755 app/assets/fonts/chuckfive/extras/chunkfive-demo.html
+ create mode 100755 app/assets/fonts/chuckfive/extras/generator_config.txt
+ create mode 100755 app/assets/fonts/chuckfive/extras/specimen_files/chunkfive-cleartype.png
+ create mode 100755 app/assets/fonts/chuckfive/extras/specimen_files/easytabs.js
+ create mode 100755 app/assets/fonts/chuckfive/extras/specimen_files/grid_12-825-55-15.css
+ create mode 100755 app/assets/fonts/chuckfive/extras/specimen_files/specimen_stylesheet.css
+ create mode 100755 app/assets/fonts/chuckfive/extras/stylesheet.css
+ create mode 100644 app/assets/fonts/webfontkit-20140521-175216.zip
+ create mode 100644 app/assets/stylesheets/fonts.css.scss
+[Web Dev]:  /vagrant/src/queerstir $ git push origin master
+Username for 'https://github.com': ajcornelius
+Password for 'https://ajcornelius@github.com': 
+To https://github.com/ajcornelius/webapp.git
+   83ab580..f8d3b64  master -> master
+[Web Dev]:  /vagrant/src/queerstir $ git push heroku master
+Fetching repository, done.
+Counting objects: 90, done.
+Compressing objects: 100% (71/71), done.
+Writing objects: 100% (74/74), 964.43 KiB | 1.49 MiB/s, done.
+Total 74 (delta 23), reused 0 (delta 0)
+
+-----> Removing .DS_Store files
+-----> Ruby app detected
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.0.0
+-----> Installing dependencies using 1.5.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       Fetching gem metadata from https://rubygems.org/..........
+       Fetching additional metadata from https://rubygems.org/..
+       Using rake (10.3.1)
+       Using minitest (4.7.5)
+       Using i18n (0.6.9)
+       Using multi_json (1.10.0)
+       Using thread_safe (0.3.3)
+       Using erubis (2.7.0)
+       Using tzinfo (0.3.39)
+       Using builder (3.1.4)
+       Using polyglot (0.3.4)
+       Using mime-types (1.25.1)
+       Using rack (1.5.2)
+       Using activerecord-deprecated_finders (1.0.3)
+       Using sass (3.2.19)
+       Using coffee-script-source (1.7.0)
+       Using arel (4.0.2)
+       Using execjs (2.0.2)
+       Using thor (0.19.1)
+       Using hike (1.2.3)
+       Using json (1.8.1)
+       Using pg (0.17.1)
+       Using bundler (1.5.2)
+       Using tilt (1.4.1)
+       Using activesupport (4.0.1)
+       Using treetop (1.4.15)
+       Using coffee-script (2.2.0)
+       Using rack-test (0.6.2)
+       Using rdoc (4.1.1)
+       Using uglifier (2.5.0)
+       Using activemodel (4.0.1)
+       Using jbuilder (1.5.3)
+       Using mail (2.5.4)
+       Using sprockets (2.11.0)
+       Using actionpack (4.0.1)
+       Using activerecord (4.0.1)
+       Using sdoc (0.4.0)
+       Using railties (4.0.1)
+       Using sprockets-rails (2.0.1)
+       Using coffee-rails (4.0.1)
+       Using jquery-rails (3.1.0)
+       Using sass-rails (4.0.3)
+       Using turbolinks (2.2.2)
+       Using actionmailer (4.0.1)
+       Using rails (4.0.1)
+       Installing bootstrap-sass (3.1.1.1)
+       Your bundle is complete!
+       Gems in the groups development and test were not installed.
+       It was installed into ./vendor/bundle
+       Bundle completed (9.27s)
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       I, [2014-05-21T22:05:50.734619 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/ChunkFive-c5217efef501cc83a2dde3ec1d9d1dea.zip
+       I, [2014-05-21T22:05:50.736270 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/ChunkFiveotf/Chunkfive-f84008fe4661d86f7c35c691f58956ba.otf
+       I, [2014-05-21T22:05:50.737932 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/ChunkFiveotf/SIL Open Font License-843ac9add24f962a6f587dbd254c0c53.txt
+       I, [2014-05-21T22:05:50.739687 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/chuckfive/chunkfive-webfont-fc5599931a7bf0bdac099b503c223ada.eot
+       I, [2014-05-21T22:05:50.741567 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/chuckfive/chunkfive-webfont-7ae9a814b6ae8be439c45ce514c0796b.svg
+       I, [2014-05-21T22:05:50.743377 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/chuckfive/chunkfive-webfont-80bdb209ea7d8fd3f3edf74738b73568.ttf
+       I, [2014-05-21T22:05:50.745121 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/chuckfive/chunkfive-webfont-b1ce49c4e99ef1893f543f985cf06575.woff
+       I, [2014-05-21T22:05:50.746876 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/chuckfive/extras/chunkfive-demo-a8e12b7566b040a36d2d4cc97ea174b0.html
+       I, [2014-05-21T22:05:50.748569 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/chuckfive/extras/generator_config-4d42434454b36aa0af8bc02ea0ba7c32.txt
+       I, [2014-05-21T22:05:50.750543 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/chuckfive/extras/specimen_files/chunkfive-cleartype-940f79a53b74295457bffd9506b29818.png
+       I, [2014-05-21T22:05:50.752889 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/webfontkit-20140521-175216-20a76b8e304e8645b64b5242da375586.zip
+       I, [2014-05-21T22:05:50.755144 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/cartographer-cbe4f3c7405d93b8493585e082d07e4d.png
+       I, [2014-05-21T22:05:50.757615 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/cartographer_@2X-5f451b86fdd8106715c0b1eed22984ea.png
+       I, [2014-05-21T22:05:50.759819 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/light_toast-639303763d72af19e564a9c0eab52232.png
+       I, [2014-05-21T22:05:50.761755 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/light_toast_@2X-5e90cfa2013c40d9ff039fc01bd32f4e.png
+       I, [2014-05-21T22:05:57.015445 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/application-cb8b3de79e170ac9168d58269a9c76f4.js
+       I, [2014-05-21T22:06:04.129824 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/application-36eedbf0fe1b73b71d18ec34927d5003.css
+       I, [2014-05-21T22:06:04.135360 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/bootstrap/glyphicons-halflings-regular-147f3f6e098736e89ffab2c15cfbef06.eot
+       I, [2014-05-21T22:06:04.135965 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/bootstrap/glyphicons-halflings-regular-777bc40741c377d9f064d1ed31041f79.svg
+       I, [2014-05-21T22:06:04.136403 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/bootstrap/glyphicons-halflings-regular-38ab34013ba10653660d52a9cf85d53e.ttf
+       I, [2014-05-21T22:06:04.136793 #706]  INFO -- : Writing /tmp/build_da75224e-8e28-489f-a7ff-a3ce2f2b2a47/public/assets/bootstrap/glyphicons-halflings-regular-41eac767e76e3241f42674b78614369e.woff
+       Asset precompilation completed (15.44s)
+       Cleaning assets
+       Running: rake assets:clean
+-----> WARNINGS:
+       Include 'rails_12factor' gem to enable all platform features
+       See https://devcenter.heroku.com/articles/rails-integration-gems for more information.
+       
+       You have not declared a Ruby version in your Gemfile.
+       To set your Ruby version add this line to your Gemfile:
+       ruby '2.0.0'
+       # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+       
+       No Procfile detected, using the default web server (webrick)
+       https://devcenter.heroku.com/articles/ruby-default-web-server
+-----> Discovering process types
+       Procfile declares types -> (none)
+       Default types for Ruby  -> console, rake, web, worker
+
+-----> Compressing... done, 23.7MB
+-----> Launching... done, v8
+       http://queerstir.herokuapp.com/ deployed to Heroku
+
+To git@heroku.com:queerstir.git
+   9a41a05..f8d3b64  master -> master
+irb(main):001:0> Place.create(:name => 'The Silver Lake Guesthouse', :address => '133 Silver Lake Dr, Rehoboth Beach, DE 19971', :description => 'Spectacular lake and ocean views make this unique townhouse a romantic getaway.  Fourteen rooms, private baths and balconies.')
+   (0.3ms)  BEGIN
+  SQL (24.2ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "133 Silver Lake Dr, Rehoboth Beach, DE 19971"], ["created_at", Sat, 24 May 2014 00:52:34 UTC +00:00], ["description", "Spectacular lake and ocean views make this unique townhouse a romantic getaway.  Fourteen rooms, private baths and balconies."], ["name", "The Silver Lake Guesthouse"], ["updated_at", Sat, 24 May 2014 00:52:34 UTC +00:00]]
+   (24.8ms)  COMMIT
+=> #<Place id: 3, name: "The Silver Lake Guesthouse", description: "Spectacular lake and ocean views make this unique t...", address: "133 Silver Lake Dr, Rehoboth Beach, DE 19971", created_at: "2014-05-24 00:52:34", updated_at: "2014-05-24 00:52:34">
+irb(main):002:0> 
+irb(main):003:0* 
+irb(main):004:0*  
+irb(main):005:0* 
+irb(main):006:0* quit
+[Web Dev]:  /vagrant/src/queerstir $ rails console
+Loading development environment (Rails 4.0.1)
+irb(main):001:0> Place.create(:name => 'Shore Inn', :address => '37239 Rehoboth Ave, Ext. Rehoboth Beach, DE 19971', :description => 'Walking distance to clubs, a part of the gay scene. Features 17 rooms, clothing-optional swimming pool and deck, loaner bikes for cruising town, pets welcome with additional fee.') 
+   (0.8ms)  BEGIN
+  SQL (23.6ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "37239 Rehoboth Ave, Ext. Rehoboth Beach, DE 19971"], ["created_at", Sat, 24 May 2014 01:01:08 UTC +00:00], ["description", "Walking distance to clubs, a part of the gay scene. Features 17 rooms, clothing-optional swimming pool and deck, loaner bikes for cruising town, pets welcome with additional fee."], ["name", "Shore Inn"], ["updated_at", Sat, 24 May 2014 01:01:08 UTC +00:00]]
+   (1.4ms)  COMMIT
+=> #<Place id: 4, name: "Shore Inn", description: "Walking distance to clubs, a part of the gay scene....", address: "37239 Rehoboth Ave, Ext. Rehoboth Beach, DE 19971", created_at: "2014-05-24 01:01:08", updated_at: "2014-05-24 01:01:08">
+irb(main):002:0> Place.create(:name => 'Canalside Inn' :address => '34 Sixth Street, Rehoboth Beach, DE 19971', :description => 'A casual and contemporary botique-style Inn.  Situated along the picturesque Lewes-Rehoboth Canal, a short distance from the center of town, the boardwalk, and the beach.')  
+SyntaxError: (irb):2: syntax error, unexpected ':', expecting ')'
+...eate(:name => 'Canalside Inn' :address => '34 Sixth Street, ...
+...                               ^
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+irb(main):003:0> Place.create(:name => 'Canalside Inn', :address => '34 Sixth Street, Rehoboth Beach, DE 19971', :description => 'A casual and contemporary botique-style Inn.  Situated along the picturesque Lewes-Rehoboth Canal, a short distance from the center of town, the boardwalk, and the beach.')  
+   (1.2ms)  BEGIN
+  SQL (1.7ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "34 Sixth Street, Rehoboth Beach, DE 19971"], ["created_at", Sat, 24 May 2014 01:14:24 UTC +00:00], ["description", "A casual and contemporary botique-style Inn.  Situated along the picturesque Lewes-Rehoboth Canal, a short distance from the center of town, the boardwalk, and the beach."], ["name", "Canalside Inn"], ["updated_at", Sat, 24 May 2014 01:14:24 UTC +00:00]]
+   (1.3ms)  COMMIT
+=> #<Place id: 5, name: "Canalside Inn", description: "A casual and contemporary botique-style Inn.  Situa...", address: "34 Sixth Street, Rehoboth Beach, DE 19971", created_at: "2014-05-24 01:14:24", updated_at: "2014-05-24 01:14:24">
+irb(main):004:0> Place.create(:name  => 'Oceanus Motel', :address => '9 Second Street, Rehoboth Beach, DE 19971', :description => 'Family-friendly beach motel, just two blocks from the beach and town.')
+   (1.8ms)  BEGIN
+  SQL (1.0ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "9 Second Street, Rehoboth Beach, DE 19971"], ["created_at", Sat, 24 May 2014 01:17:52 UTC +00:00], ["description", "Family-friendly beach motel, just two blocks from the beach and town."], ["name", "Oceanus Motel"], ["updated_at", Sat, 24 May 2014 01:17:52 UTC +00:00]]
+   (2.3ms)  COMMIT
+=> #<Place id: 6, name: "Oceanus Motel", description: "Family-friendly beach motel, just two blocks from t...", address: "9 Second Street, Rehoboth Beach, DE 19971", created_at: "2014-05-24 01:17:52", updated_at: "2014-05-24 01:17:52">
+irb(main):005:0> Place.create(:name => 'Cabana Gardens', :address => '20 Lake Ave, Rehoboth Beach, DE 19971,' :description => 'Comfortable Inn features swimming pool, decks in every room, and a beautiful roof top deck.')        
+SyntaxError: (irb):5: syntax error, unexpected ':', expecting ')'
+...e, Rehoboth Beach, DE 19971,' :description => 'Comfortable I...
+...                               ^
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+irb(main):006:0> Place.create(:name => 'Cabana Gardens', :address => '20 Lake Ave, Rehoboth Beach, DE 19971', :description => 'Comfortable Inn features swimming pool, decks in every room, and a beautiful roof top deck.')
+   (2.5ms)  BEGIN
+  SQL (2.4ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "20 Lake Ave, Rehoboth Beach, DE 19971"], ["created_at", Sat, 24 May 2014 01:23:43 UTC +00:00], ["description", "Comfortable Inn features swimming pool, decks in every room, and a beautiful roof top deck."], ["name", "Cabana Gardens"], ["updated_at", Sat, 24 May 2014 01:23:43 UTC +00:00]]
+   (1.4ms)  COMMIT
+=> #<Place id: 7, name: "Cabana Gardens", description: "Comfortable Inn features swimming pool, decks in ev...", address: "20 Lake Ave, Rehoboth Beach, DE 19971", created_at: "2014-05-24 01:23:43", updated_at: "2014-05-24 01:23:43">
+irb(main):007:0> Place.create (:name => 'The Breakers Hotel', :address => '105 Second Street, Rehototh Beach, DE 19971', :descrition => 'Family and gay friendly hotel, centrally located on Lake Gerar, just two blocks from the beach and boardwalk.')
+SyntaxError: (irb):7: syntax error, unexpected =>, expecting ')'
+Place.create (:name => 'The Breakers Hotel', :addre...
+                      ^
+(irb):7: syntax error, unexpected ',', expecting end-of-input
+...(:name => 'The Breakers Hotel', :address => '105 Second Stre...
+...                               ^
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+irb(main):008:0> Place.create(:name => 'The Breakers Hotel', :address => '105 Second Street, Rehototh Beach, DE 19971', :descrition => 'Family and gay friendly hotel, centrally located on Lake Gerar, just two blocks from the beach and boardwalk.')
+ActiveRecord::UnknownAttributeError: unknown attribute: descrition
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/attribute_assignment.rb:47:in `rescue in _assign_attribute'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/attribute_assignment.rb:42:in `_assign_attribute'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/attribute_assignment.rb:29:in `block in assign_attributes'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/attribute_assignment.rb:23:in `each'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/attribute_assignment.rb:23:in `assign_attributes'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/core.rb:460:in `init_attributes'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/core.rb:185:in `initialize'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/inheritance.rb:27:in `new'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/inheritance.rb:27:in `new'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-4.0.1/lib/active_record/persistence.rb:36:in `create'
+	from (irb):8
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+irb(main):009:0> Place.create(:name => 'The Breakers Hotel', :address => '105 Second Street, Rehototh Beach, DE 19971', :description => 'Family and gay friendly hotel, centrally located on Lake Gerar, just two blocks from the beach and boardwalk.')
+   (1.4ms)  BEGIN
+  SQL (1.9ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "105 Second Street, Rehototh Beach, DE 19971"], ["created_at", Sat, 24 May 2014 01:34:54 UTC +00:00], ["description", "Family and gay friendly hotel, centrally located on Lake Gerar, just two blocks from the beach and boardwalk."], ["name", "The Breakers Hotel"], ["updated_at", Sat, 24 May 2014 01:34:54 UTC +00:00]]
+   (2.6ms)  COMMIT
+=> #<Place id: 8, name: "The Breakers Hotel", description: "Family and gay friendly hotel, centrally located on...", address: "105 Second Street, Rehototh Beach, DE 19971", created_at: "2014-05-24 01:34:54", updated_at: "2014-05-24 01:34:54">
+irb(main):010:0> Place.create(:name => 'Hotel Rehoboth' :address => '247 Rehoboth Ave, Rehoboth, DE 19971', :description => 'Elegant and close to everything, walking distance to the boardwalk, beach, and town.')
+SyntaxError: (irb):10: syntax error, unexpected ':', expecting ')'
+...ate(:name => 'Hotel Rehoboth' :address => '247 Rehoboth Ave,...
+...                               ^
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+irb(main):011:0> Place.create(:name => 'Hotel Rehoboth', :address => '247 Rehoboth Ave, Rehoboth, DE 19971', :description => 'Elegant and close to everything, walking distance to the boardwalk, beach, and town.')
+   (1.8ms)  BEGIN
+  SQL (2.3ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "247 Rehoboth Ave, Rehoboth, DE 19971"], ["created_at", Sat, 24 May 2014 01:38:56 UTC +00:00], ["description", "Elegant and close to everything, walking distance to the boardwalk, beach, and town."], ["name", "Hotel Rehoboth"], ["updated_at", Sat, 24 May 2014 01:38:56 UTC +00:00]]
+   (1.2ms)  COMMIT
+=> #<Place id: 9, name: "Hotel Rehoboth", description: "Elegant and close to everything, walking distance t...", address: "247 Rehoboth Ave, Rehoboth, DE 19971", created_at: "2014-05-24 01:38:56", updated_at: "2014-05-24 01:38:56">
+irb(main):012:0> Place.create(:name => 'The BeDazzled B&B', :address => '67 Lake Ave, Rehoboth Beach, DE 19971', :description => 'Lesbian-owned Victorian Townhouses near the main drag')
+   (0.5ms)  BEGIN
+  SQL (0.1ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "67 Lake Ave, Rehoboth Beach, DE 19971"], ["created_at", Sat, 24 May 2014 01:41:32 UTC +00:00], ["description", "Lesbian-owned Victorian Townhouses near the main drag"], ["name", "The BeDazzled B&B"], ["updated_at", Sat, 24 May 2014 01:41:32 UTC +00:00]]
+   (1.5ms)  COMMIT
+=> #<Place id: 10, name: "The BeDazzled B&B", description: "Lesbian-owned Victorian Townhouses near the main dr...", address: "67 Lake Ave, Rehoboth Beach, DE 19971", created_at: "2014-05-24 01:41:32", updated_at: "2014-05-24 01:41:32">
+irb(main):013:0> Place.create(:name => 'Melissa\'s B&B', :address => '36 Delaware Ave, Rehoboth Beach, DE 19971', :description => 'Gay-friendly vintage beach cottage, cozy front porch with ocean breeze')
+   (3.2ms)  BEGIN
+  SQL (2.5ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "36 Delaware Ave, Rehoboth Beach, DE 19971"], ["created_at", Sat, 24 May 2014 01:44:48 UTC +00:00], ["description", "Gay-friendly vintage beach cottage, cozy front porch with ocean breeze"], ["name", "Melissa's B&B"], ["updated_at", Sat, 24 May 2014 01:44:48 UTC +00:00]]
+   (1.5ms)  COMMIT
+=> #<Place id: 11, name: "Melissa's B&B", description: "Gay-friendly vintage beach cottage, cozy front porc...", address: "36 Delaware Ave, Rehoboth Beach, DE 19971", created_at: "2014-05-24 01:44:48", updated_at: "2014-05-24 01:44:48">
+irb(main):014:0> Place.create(:name => 'Delaware Inn', :address => '55 Delaware Ave, Rehoboth Beach, DE 19971', :description => 'Charming B&B with Southern hospitality')
+   (4.4ms)  BEGIN
+  SQL (0.0ms)  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "55 Delaware Ave, Rehoboth Beach, DE 19971"], ["created_at", Sat, 24 May 2014 01:46:56 UTC +00:00], ["description", "Charming B&B with Southern hospitality"], ["name", "Delaware Inn"], ["updated_at", Sat, 24 May 2014 01:46:56 UTC +00:00]]
+   (2.2ms)  COMMIT
+=> #<Place id: 12, name: "Delaware Inn", description: "Charming B&B with Southern hospitality", address: "55 Delaware Ave, Rehoboth Beach, DE 19971", created_at: "2014-05-24 01:46:56", updated_at: "2014-05-24 01:46:56">
+irb(main):015:0> quit
+[Web Dev]:  /vagrant/src/queerstir $ git add --all
+[Web Dev]:  /vagrant/src/queerstir $ git commit -am "added more places"
+# On branch master
+nothing to commit (working directory clean)
+[Web Dev]:  /vagrant/src/queerstir $ git push heroku master
+Fetching repository, done.
+Everything up-to-date
+[Web Dev]:  /vagrant/src/queerstir $ 
