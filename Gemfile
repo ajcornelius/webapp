@@ -40,6 +40,12 @@ gem 'devise'
 #kaminari pagination
 gem 'kaminari'
 
+#for converting addresses into lat and lon
+gem 'geocoder'
+
+# to put api key into local variable
+gem 'figaro'
+
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
