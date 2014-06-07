@@ -1,0 +1,73 @@
+Last login: Sat May 31 20:48:17 on ttys002
+Welcome GurlDigit!
+/Users/angela/Desktop/vagrant/tools/vagrant.command ; exit;
+Angela-Corneliuss-MacBook-Pro:~ angela$ /Users/angela/Desktop/vagrant/tools/vagrant.command ; exit;
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
+
+ * Documentation:  https://help.ubuntu.com/
+Welcome to your Vagrant-built virtual machine.
+Last login: Sun Jun  1 00:48:17 2014 from 10.0.2.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Welcome to your Firehose Web Dev Environment
+For more info check out theFirehoseProject.com
+
+[Web Dev]:  /vagrant $ heroku run console
+ !    No app specified.
+ !    Run this command from an app folder or specify which app to use with --app APP.
+[Web Dev]:  /vagrant $ cd src
+[Web Dev]:  /vagrant/src $ cd queerstir
+[Web Dev]:  /vagrant/src/queerstir $ heroku run console
+Running `console` attached to terminal... up, run.6634
+Loading production environment (Rails 4.0.1)
+irb(main):001:0> Place.find(3).destroy
+=> #<Place id: 3, name: "Cabana Gardens", description: "Comfortable Inn features swimming pool, decks in ev...", address: "20 Lake Ave, Rehoboth Beach, DE 19971", created_at: "2014-06-04 23:03:52", updated_at: "2014-06-04 23:03:52", user_id: 1, latitude: 38.7173385620117, longitude: -75.0834884643555>
+irb(main):002:0> Place.find(4).destroy
+=> #<Place id: 4, name: "Canalside Inn", description: "A casual and contemporary botique-style Inn. Situat...", address: "34 Sixth Street, Rehoboth Beach, DE 19971", created_at: "2014-06-04 23:04:36", updated_at: "2014-06-04 23:04:36", user_id: 1, latitude: 38.7127914428711, longitude: -75.0922317504883>
+irb(main):003:0> Place.find(1).destroy
+=> #<Place id: 1, name: "Rams Head Inn", description: "Clothing optional men only resort, 12 man sauna, 10...", address: "35006 Warrington Rd, Rehoboth Beach, DE 19971", created_at: "2014-05-14 23:39:13", updated_at: "2014-05-14 23:39:13", user_id: nil, latitude: nil, longitude: nil>
+irb(main):004:0> Place.find(8).destroy
+=> #<Place id: 8, name: "Oceanus Motel", description: "Family-friendly beach motel You'll be able to walk ...", address: "9 Second Street Rehoboth Beach, DE 19971", created_at: "2014-06-04 23:08:10", updated_at: "2014-06-04 23:08:10", user_id: 1, latitude: 38.7213798612356, longitude: -75.0827269256115>
+irb(main):005:0> Place.find(5).destroy
+=> #<Place id: 5, name: "Delaware Inn", description: "Charming B&B with Southern hospitality", address: "55 Delaware Ave, Rehoboth Beach, DE 19971", created_at: "2014-06-04 23:05:20", updated_at: "2014-06-04 23:05:20", user_id: 1, latitude: 38.7147979736328, longitude: -75.0811920166016>
+irb(main):006:0> Place.find(6).destroy
+=> #<Place id: 6, name: "Hotel Rehoboth", description: "Elegant and close to everything, walking distance t...", address: "247 Rehoboth Ave, Rehoboth, DE 19971", created_at: "2014-06-04 23:06:19", updated_at: "2014-06-04 23:06:19", user_id: 1, latitude: 38.716213, longitude: -75.085007>
+irb(main):007:0> Place.find(7).destroy
+=> #<Place id: 7, name: "Melissa's B&B", description: "Gay-friendly vintage beach cottage, cozy front porc...", address: "36 Delaware Ave, Rehoboth Beach, DE 19971", created_at: "2014-06-04 23:07:10", updated_at: "2014-06-04 23:07:10", user_id: 1, latitude: 38.7144775390625, longitude: -75.0794219970703>
+irb(main):008:0> Place.find(2).destroy
+=> #<Place id: 2, name: "Rehoboth Guest House", description: "Cozy gay and lesbian guesthouse close to the Boardw...", address: "40 Maryland Ave, Rehoboth Beach, DE 19971", created_at: "2014-05-14 23:40:01", updated_at: "2014-05-14 23:40:01", user_id: nil, latitude: nil, longitude: nil>
+irb(main):009:0> exit
+[Web Dev]:  /vagrant/src/queerstir $ rails console
+Loading development environment (Rails 4.0.1)
+irb(main):001:0> NotificationMailer.comment_added.deliver
+ArgumentError: wrong number of arguments (0 for 1)
+	from /vagrant/src/queerstir/app/mailers/notification_mailer.rb:4:in `comment_added'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__384972501__process_action__callbacks'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:503:in `process'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:497:in `initialize'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:480:in `new'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:480:in `method_missing'
+	from (irb):1
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+irb(main):002:0> 
